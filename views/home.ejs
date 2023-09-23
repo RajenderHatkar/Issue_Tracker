@@ -1,0 +1,26 @@
+
+<head>
+    <link rel="stylesheet" href="/Assets/CSS_files/home.css">
+    <title><%= title%></title>
+    <link rel="stylesheet" href="/CSS_files/home.css">
+</head>
+<body>
+    <div class="heading"><h1>Issue Tracker</h1></div>
+    <div class="projects-cont">
+        <h2>Projects</h2>
+        <ul>
+            <% for (let i of project_list){%>
+                <div class="project">
+                    <li>
+                        <a href="/details/<%=i._id%>"><%= i.name%></a>
+                    </li>
+                </div>
+            <%}%>
+        </ul>
+    </div>
+    <div class="newPro">
+        <a href="/newproject">Create New Project</a>
+    </div>
+    
+</body>
+</html>

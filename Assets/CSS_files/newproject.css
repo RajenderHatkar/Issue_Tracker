@@ -1,0 +1,63 @@
+body{
+    margin:0px;
+    background-color: lightblue;
+    font-family: sans-serif;
+
+}
+.heading{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    
+    color:chocolate
+}
+.home{
+    padding: 10px;
+    margin: 10px;
+    position: fixed;
+    top: 2%;
+    background-color: aquamarine;
+    border-radius: 10px;
+
+
+}
+.home:hover{
+  background-color: rgb(26, 82, 12);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.proj-creation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(206, 197, 185);
+    border-radius: 10px;
+    width: 40%;
+    position: relative;
+    left:25%
+
+}
+div{
+    padding: 10px;
+    margin: 10px;
+}
+button{
+    padding: 10px;
+    border-style: none;
+    border-radius:10px ;
+    position: relative;
+    left:80px;
+}
+button:hover{
+    background-color:rgba(205, 17, 145, 0.542)
+}

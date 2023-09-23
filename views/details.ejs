@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%></title>
+    <link rel="stylesheet" href="/CSS_files/details.css">
+</head>
+<body>
+    <div class="heading"><h1>Project details</h1></div>
+
+    <div class="home">
+        <a href="/">HOME</a>
+    </div>
+    <div class="heading-1">
+        <h2>Details of the Project</h2>
+        <div>
+            <span>Name: </span><span class="span-1"><%= project.name%></span>
+        </div>
+        <div>
+            <span>Author: </span><span class="span-1"><%= project.author%></span>
+        </div>
+        <div>
+            <span>Description: </span> <span class="span-1"><%= project.description%></span>
+        </div>
+
+
+    </div>
+    <h3>Issues</h3>
+    <div class=" fil-butt">
+      <button>All Issues</button>
+      <button>Filter Issues</button>
+      <button>Search Issues</button>
+
+    </div>
+
+    <div>
+        <ul>
+            <% for (let i of project.issues){%>
+                <div class="project">
+                    <li>
+                        <div>
+                            <span> Issue:</span><span class="span-1"><%= i.title%></p>
+                        </div>
+                        <div>
+                            <span> Author of the Issue:</span><span class="span-1"><%= i.authors%></p>
+                        </div>
+                        <div>
+                            <span> Labels:</span><span class="span-1"><%= i.labels%></p>
+                        </div><div>
+                            <span> Description:</span><span class="span-1"><%= i.descriptions%></p>
+                        </div>
+                
+                    </li>
+                </div>
+            <%}%>
+        </ul>
+    </div>
+    <div>
+        <button><a href="/details/Issue/<%= project._id%>">Create a Issue</a></button>
+    </di>
+    <script src="/js_files/filter.js"></script>
+
+</body>
+</html>

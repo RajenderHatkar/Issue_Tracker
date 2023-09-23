@@ -1,0 +1,102 @@
+body{
+    margin:0px;
+    background-color: rgba(20, 231, 143, 0.223);
+    font-family: sans-serif;
+
+}
+.heading{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    
+    color:chocolate
+}
+.home{
+    padding: 10px;
+    margin: 10px;
+    position: fixed;
+    top: 2%;
+    background-color: aquamarine;
+    border-radius: 10px;
+
+
+}
+.home:hover{
+  background-color: rgb(26, 82, 12);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.heading-1{
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+div{
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+}
+span{
+    padding: 5px;
+    color: rgb(211, 11, 11);
+    font-weight: 600;
+}
+.span-1{
+    padding: 5px;
+    color: rgb(14, 14, 14);
+    font-weight: 500;
+
+}
+h3{
+    
+    margin: 5px;
+    padding: 20px;
+    color: chocolate;
+
+}
+.project{
+    margin-left: 100px;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.462);
+    border-radius: 10px;
+
+}
+ul{
+    padding: 10px;
+    margin: 10px;
+}
+ul li{
+    padding: 10px;
+    list-style-type: none;
+}
+button{
+    background-color: blue;
+    padding: 10px;
+    border-style: none;
+    border-radius:10px ;
+    position: relative;
+    left:80px;
+}
+button:hover{
+    background-color:rgba(45, 17, 205, 0.542)
+}
+
+.fil-butt{
+    width:40% ;
+    justify-content: space-around;
+
+}
